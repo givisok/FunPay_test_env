@@ -8,16 +8,16 @@
  - nodejs
 
 ##Старт сервера
-1.```make start-dev```
-2.Публичная папка находится по пути `app/public`; 
+1. ```make start-dev```
+2. Публичная папка находится по пути `app/public`; 
 
 ##Доступ 
 ```http://localhost:10080```
 
 ##Разворачивание проекта
-1.```make start-dev```
-2.`make shell-node` -> `gulp && exit`;
-3.`make shell-dev` -> `composer install && exit`
+1. ```make start-dev```
+2. `make shell-node` -> `gulp && exit`;
+3. `make shell-dev` -> `composer install && exit`
 
 
 ##Первое задание
