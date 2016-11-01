@@ -1,0 +1,6 @@
+.idea
+runtime
+app/bower_components
+app/node_modules
+app/public/assets
+app/vendor

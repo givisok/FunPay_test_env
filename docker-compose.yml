@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+  
+  # dependency containers
+  node:
+    build: ./containers/node/
+    volumes:
+     - ./app:/app/htdocs
+    ports:
+     - "3000:3000"
+     - "3001:3001"
+
+  # util containers
+  nginx-dev:
+    build: ./containers/nginx-dev/
+    links:
+     - php-dev
+    ports:
+     - "10080:80"
+    volumes_from:
+     - php-dev
+
+  php-dev:
+    build: ./containers/php-dev/
+    volumes:
+     - ./app:/app/htdocs
+     - ./runtime/logs:/app/log
+
+  phpunit:
+    build: ./containers/phpunit/
+    volumes:
+     - ./app:/app/htdocs
+     - ./runtime/logs:/app/log
