@@ -1,3 +1,18 @@
 .example {
   margin-top: 5%;
 }
+
+.pre-loader-center {
+  float: none;
+  text-align: center;
+}
+
+.modal-error {
+  background-color: $state-danger-bg !important;
+  color: $state-danger-text;
+}
+
+.modal-body-overflow {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
