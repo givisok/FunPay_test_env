@@ -1,10 +1,19 @@
 .example {
   margin-top: 5%;
 }
+body {
+  padding-right: 0 !important;
+}
 
 .pre-loader-center {
   float: none;
   text-align: center;
+}
+.modal-open, .modal-open .navbar-fixed-top {
+  margin-right: auto !important;
+}
+.modal {
+  overflow-y: auto;
 }
 
 .modal-error {
@@ -13,6 +22,5 @@
 }
 
 .modal-body-overflow {
-  max-height: calc(100vh - 210px);
   overflow-y: auto;
 }
