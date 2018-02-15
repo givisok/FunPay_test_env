@@ -80,6 +80,6 @@ class YandexSmsConfirmation implements SmsConfirmation
 
     public function setCurrency(string $currency)
     {
-        return $this->currency = $currency;
+        $this->currency = $currency;
     }
 }
